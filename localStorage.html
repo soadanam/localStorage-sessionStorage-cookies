@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+
+    <!-- vanilla css -->
+    <link rel="stylesheet" href="/css/localStorage.css">
+    
+</head>
+<body>
+    <main>
+        <h1>Local Storage Test:</h1>
+        <section>
+            <input id="productId" type="text" placeholder="product name">
+            <input id="priceId" type="number" placeholder="price">
+            <button id="searchId" onclick="getInput()" type="submit" class="btn btn-success">Search</button>
+            <button onclick="myCookie()" type="button">Cookie!</button>
+        </section>
+        
+        <section>
+            <h4>Products from Local Storage Data:</h4>
+            <ul id="ulId">
+                
+            </ul>
+        </section>
+    </main>
+
+    <!-- CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js" integrity="sha256-0H3Nuz3aug3afVbUlsu12Puxva3CP4EhJtPExqs54Vg=" crossorigin="anonymous"></script> -->
+    <script src="/js/cdn.js"></script>
+
+    <!-- custom javascript, IT should be most BOTTOM!!! -->
+    <script src="/js/localStorage.js"></script>
+</body>
+</html>
