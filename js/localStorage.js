@@ -62,5 +62,19 @@ const displayProducts = (object) =>{
 
 
 
+//cookie experiment!
+const myCookie = () =>{
+    document.cookie = "username=John Doe; expires=Thu, 18 Dec 2033 12:00:00 UTC";
 
+    const c = document.cookie;
+    // console.log('COOKIES:', c);
+}
+
+Cookies.set('myWeb', 'true')
+let myCookie5 = Cookies.get('myWeb');
+// console.log('my web5 is:', myCookie5);
+let title = document.querySelector('h1');
+if(myCookie5){
+title.classList.add('cookie')
+}
 
